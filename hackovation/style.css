@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: black;
+
+
+}
+
+
+/* =============================Coding start =============== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: url("1.webp");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: fit-content;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+
+}
+
+.nav-head {
+
+    font-size: 1.75rem;
+    margin-left: 10px;
+    color: rgb(237, 231, 231);
+    height: max-content;
+
+}
+
+#ai {
+    color: rgb(51, 232, 48);
+}
+
+.bar {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 20px;
+
+}
+
+.nav-a {
+    color: white;
+    /* border: 2px solid pink; */
+    margin: 0px 10px;
+    text-decoration: none;
+
+
+}
+
+#feedback {
+    border: 1px solid rgb(51, 232, 48);
+    height: max-content;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+/* ==================head section coding  start ================  */
+.content {
+    /* margin-top: 200px; */
+    position: absolute;
+    top: 26%;
+    left: 35%;
+    line-height: 40px;
+    text-align: center;
+    /* border: 2px solid white; */
+}
+
+.head1-cnt {
+    color: whitesmoke;
+}
+
+#multicolortext {
+    background-image: linear-gradient(to left, rgb(228, 12, 206), rgb(203, 53, 108), rgb(233, 167, 208));
+    background-clip: text;
+    color: transparent;
+}
+
+/* ==================head section coding  end ================  */
+
+
+
+/* ============Button making coding start ========== */
+.btn-make {
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    display: flex;
+    border: 2px solid rgb(200, 0, 255);
+    border-radius: 5px;
+
+
+}
+
+#message {
+    width: 447px;
+    height: 50px;
+    border: 2px solid rgb(200, 0, 255);
+    color: rgb(34, 3, 27);
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(to left, rgb(228, 12, 206), rgb(203, 53, 108), rgb(233, 167, 208));
+    background-clip: text;
+    color: transparent;
+    font-size: 1.03rem;
+
+
+}
+
+#genrate {
+    width: 95px;
+    height: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(175, 8, 221);
+    text-transform: uppercase;
+    font-style: italic;
+    border: 2px solid rgb(200, 0, 255);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* ============Button making coding End ========== */
+
+/* ============About us styling start ============= */
+.about-sec {
+    /* border: 2px solid red; */
+    height: 1100px;
+}
+
+.head-desing {
+    color: white;
+    text-decoration: underline;
+    border: 2px solid rgb(27, 26, 26);
+    box-shadow: 0px 0px 8px rgb(70, 68, 68);
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    background-image: linear-gradient(to left, rgb(228, 12, 206), rgb(203, 53, 108), rgb(233, 167, 208));
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+
+#who {
+    margin-top: 40px;
+    width: 619px;
+    height: 495px;
+    border-radius: 100px;
+    padding: 60px;
+    font-size: 1.3rem;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px rgb(104, 101, 101);
+    color: rgb(255, 251, 251);
+
+
+
+}
+
+#mission {
+    margin-top: 40px;
+    width: 619px;
+    height: 495px;
+    border-radius: 100px;
+    padding: 60px;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px rgb(104, 101, 101);
+    color: rgb(255, 251, 251);
+
+
+}
+
+.para {
+    margin: 20px;
+
+}
+
+.about-sub-head {
+    text-decoration: underline;
+    font-size: 2.75rem;
+    background-image: linear-gradient(to left, rgb(228, 12, 206), rgb(203, 53, 108), rgb(233, 167, 208));
+    background-clip: text;
+    color: transparent;
+
+}
+
+/* ============About us styling end ============= */
+
+/* ============ feedback coding style start =========== */
+
+#text {
+    margin-top: 30px;
+
+}
+
+.fd {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 40px;
+
+}
+
+.msg-h {
+    color: white;
+}
+
+.area {
+    margin-top: 10px;
+    height: 210px;
+    width: 503px;
+    border-radius: 20px;
+}
+
+#fd-submit {
+    width: 95px;
+    height: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(175, 8, 221);
+    text-transform: uppercase;
+    border-radius: 20px;
+    /* font-style: italic; */
+    border: 2px solid rgb(200, 0, 255);
+    cursor: pointer;
+}
+
+/* ============ feedback coding style end =========== */
+
+/* ================= footer section styling start ========== */
+
+.footer {
+    margin-top: 40px;
+    background-color: rgb(25, 29, 28);
+    border: 2px solid rgb(27, 26, 26);
+    box-shadow: 0px 0px 8px rgb(70, 68, 68);
+    width: 100%;
+
+    text-align: center;
+
+}
+
+.footer-para {
+
+    color: white;
+
+
+}
+
+/* ================= footer section styling end ========== */

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<script>
+    function initialize() {
+       var locations = [
+           ['<strong>Shivam Boys Hostel</strong> <br/>' +'Koni<br/>'+'Bilaspur<br/>'+'India<br/>'+ 'PH: +91 987654321 ', 22.12803,82.12912, 3],
+           ['<strong>Tiwari Girls Hostel</strong> <br/>'+'Koni <br/>' + 'PH: +91 987654321', 22.12990,82.12822, 2]
+          
+       ];
+   
+       window.map = new google.maps.Map(document.getElementById('map'), {
+           mapTypeId: google.maps.MapTypeId.ROADMAP
+       });
+   
+       var infowindow = new google.maps.InfoWindow();
+   
+       var bounds = new google.maps.LatLngBounds();
+   
+       for (i = 0; i < locations.length; i++) {
+           marker = new google.maps.Marker({
+               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+               map: map
+           });
+   
+           bounds.extend(marker.position);
+   
+           google.maps.event.addListener(marker, 'click', (function (marker, i) {
+               return function () {
+                   infowindow.setContent(locations[i][0]);
+                   infowindow.open(map, marker);
+               }
+           })(marker, i));
+       }
+   
+       map.fitBounds(bounds);
+   
+       var listener = google.maps.event.addListener(map, "idle", function () {
+           map.setZoom(5);
+           google.maps.event.removeListener(listener);
+       });
+   }
+   
+   function loadScript() {
+       var script = document.createElement('script');
+       script.type = 'text/javascript';
+       script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+       document.body.appendChild(script);
+   }
+   
+   window.onload = loadScript;
+                                        </script>
+
+<body>
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <div class="service">
+        <h2 class="head-ser">Your Result</h2>
+
+    </div>
+
+
+    <div class="service-box">
+        <div class="box box-desing">
+            <img src="image/hs1.jpg" alt="Hostel Image" class="hs-img">
+
+            <p class="service-para bold">Panchsheel Boys Hostel</p>
+            <p class="service-para">Koni,Bilaspur</p>
+            <p class="service-para">Rs. 2000/-month</p>
+
+            <a href="pay.html"id="pay">Book Now</a>
+          
+
+        </div>
+
+        <div class="box box-desing">
+            <img src="image/hs2.jpg" alt="Hostel Image" class="hs-img">
+
+            <p class="service-para bold">Bilasa Girls Hostel</p>
+            <p class="service-para">Koni,Bilaspur</p>
+            <p class="service-para">Rs. 2000/-month</p>
+            <a href="pay.html"id="pay">Book Now</a>
+          
+
+        </div>
+
+        <div class="box box-desing">
+            <img src="image/hs3.jpg" alt="Hostel Image" class="hs-img">
+
+            <p class="service-para bold">Harmony Haven Hostel</p>
+            <p class="service-para">Koni,Bilaspur</p>
+            <p class="service-para">Rs. 2000/-month</p>
+
+            <a href="pay.html"id="pay">Book Now</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="service-box mt">
+        <div class="box box-desing">
+            <img src="image/hs4.jpg" alt="Hostel Image" class="hs-img">
+
+            <p class="service-para bold">Serene Retreat for Women</p>
+            <p class="service-para">Koni,Bilaspur</p>
+            <p class="service-para">Rs. 2000/-month</p>
+
+            <a href="pay.html"id="pay">Book Now</a>
+
+        </div>
+
+        <div class="box box-desing">
+            <img src="image/hs5.jpg" alt="Hostel Image" class="hs-img">
+
+            <p class="service-para bold">Radiant Rose Hostel</p>
+            <p class="service-para">Koni,Bilaspur</p>
+            <p class="service-para">Rs. 2000/-month</p>
+
+            <a href="pay.html"id="pay">Book Now</a>
+
+        </div>
+
+        <div class="box box-desing">
+            <img src="image/hs1.jpg" alt="Hostel Image" class="hs-img">
+
+            <p class="service-para bold">Alpha Asylum Hostel</p>
+            <p class="service-para">Koni,Bilaspur</p>
+            <p class="service-para">Rs. 2000/-month</p>
+
+            <a href="pay.html"id="pay">Book Now</a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+
+  

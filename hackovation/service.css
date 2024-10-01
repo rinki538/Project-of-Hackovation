@@ -1,0 +1,100 @@
+body {
+    /* background-color:rgb(253, 234, 234); */
+}
+
+/* ======================Service section coding start========= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.head-ser {
+    font-size: 2rem;
+    text-decoration: underline rgb(0, 0, 0);
+    font-weight: bolder;
+    /* color: white; */
+    text-decoration: underline;
+}
+
+
+
+/* ==============service section box coding start =========== */
+
+.service-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(88, 86, 86);
+    border-radius: 20px;
+    height: fit-content;
+    width: 341px;
+    background-color: rgb(241, 228, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+
+
+
+.hs-img {
+    height: 203px;
+    width: 263px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: all 1s linear;
+}
+.hs-img:hover{
+    height: 225px;
+    width: 283px;
+}
+
+.service-para {
+    margin-bottom: -2px;
+}
+
+
+.bold {
+    font-weight: bolder;
+}
+
+.mt{
+    margin-top: 20px;
+}
+
+#pay {
+    margin: 10px 0px 8px 0px;
+    width: 115px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgb(175, 8, 221);
+    text-transform: uppercase;
+    border: 2px solid rgb(200, 0, 255);
+    cursor: pointer;
+    transition:  all 1s ease-in-out ;
+    text-decoration: none;
+    padding: 5px 0px 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#pay:hover{
+    color: black;
+    background-color: white;
+}
